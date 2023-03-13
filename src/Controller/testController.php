@@ -18,5 +18,10 @@ namespace App\Controller {
             $mt = $calcul->prixtva(100);
             dd("bonjour vontre montant tva est " . $mt);
         }
+        #[route('test2', name: 'test2')]
+        function test2()
+        {
+            return $this->render('test2.html.twig');
+        }
     }
 }
